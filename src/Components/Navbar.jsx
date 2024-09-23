@@ -5,22 +5,21 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const Navigate = useNavigate();
-  const [Active, Setactive] = useState(null);
+  const [Active, Setactive] = useState("Home");
 
   useEffect(() => {
     if (Active === "Home") {
       Navigate("/");
-    }else if (Active === 'About') {
-        Navigate('/about')
-    }else if (Active === "Academics") {
-        Navigate('/Academics')
-    }else if (Active === 'Admission') {
-        Navigate('/Admission')
-    }else if (Active === 'studentlife') {
-        Navigate('/studentlife')
+    } else if (Active === "About") {
+      Navigate("/about");
+    } else if (Active === "Academics") {
+      Navigate("/Academics");
+    } else if (Active === "Admission") {
+      Navigate("/Admission");
+    } else if (Active === "studentlife") {
+      Navigate("/studentlife");
     }
-
-  },[Navigate, Active]);
+  }, [Navigate, Active]);
 
   return (
     <div className="px-[51px]">
@@ -41,20 +40,42 @@ const Navbar = () => {
           <ul className="flex h-full  cursor-pointer">
             <li
               onClick={() => Setactive("Home")}
-              className="text-xl font-medium font-Outfit text-SecondaryColor  px-[34px] border-l border-r py-10  hover:bg-[#FFEFE5] duration-300 "
+              className={`text-xl font-medium font-Outfit text-SecondaryColor  px-[34px] border-l border-r py-10  hover:bg-[#FFEFE5] duration-300 ${
+                Active === "Home" ? "bg-[#FFEFE5]" : "bg-[#fff]"
+              }`}
             >
               Home
             </li>
-            <li onClick={()=>Setactive('About')} className="text-xl font-medium font-Outfit text-SecondaryColor  px-[34px]  border-r py-10  hover:bg-[#FFEFE5] duration-300  ">
+            <li
+              onClick={() => Setactive("About")}
+              className={`text-xl font-medium font-Outfit text-SecondaryColor  px-[34px]  border-r py-10  hover:bg-[#FFEFE5] duration-300 ${
+                Active === "About" ? "bg-[#FFEFE5]" : "bg-[#fff]"
+              }`}
+            >
               About Us
             </li>
-            <li onClick={()=>Setactive("Academics")} className="text-xl font-medium font-Outfit text-SecondaryColor  px-[34px]  border-r py-10 hover:bg-[#FFEFE5] duration-300  ">
+            <li
+              onClick={() => Setactive("Academics")}
+              className={`text-xl font-medium font-Outfit text-SecondaryColor  px-[34px]  border-r py-10 hover:bg-[#FFEFE5] duration-300 ${
+                Active === "Academics" ? "bg-[#FFEFE5]" : "bg-[#fff]"
+              }`}
+            >
               Academics
             </li>
-            <li onClick={()=>Setactive('Admission')} className="text-xl font-medium font-Outfit text-SecondaryColor  px-[34px]  border-r py-10 hover:bg-[#FFEFE5] duration-300  ">
+            <li
+              onClick={() => Setactive("Admission")}
+              className={`text-xl font-medium font-Outfit text-SecondaryColor  px-[34px]  border-r py-10 hover:bg-[#FFEFE5] duration-300 ${
+                Active === "Admission" ? "bg-[#FFEFE5]" : "bg-[#fff]"
+              }`}
+            >
               Admissions
             </li>
-            <li onClick={()=>Setactive('studentlife')} className="text-xl font-medium font-Outfit text-SecondaryColor  px-[34px]  border-r py-10  hover:bg-[#FFEFE5] duration-300 ">
+            <li
+              onClick={() => Setactive("studentlife")}
+              className={`text-xl font-medium font-Outfit text-SecondaryColor  px-[34px]  border-r py-10 hover:bg-[#FFEFE5] duration-300 ${
+                Active === "studentlife" ? "bg-[#FFEFE5]" : "bg-[#fff]"
+              }`}
+            >
               Student Life
             </li>
             <li className="text-xl font-medium font-Outfit text-SecondaryColor  px-[34px]   py-10 bg-[#FFAE80]  ">
