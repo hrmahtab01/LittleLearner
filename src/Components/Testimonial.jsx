@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Iconone from "../assets/icon.png";
 import { FaStar } from "react-icons/fa";
+import icontwo from "../assets/icon 3.png";
+import iconthree from "../assets/icon 2.png"
 
 const Testimonial = () => {
   const settings = {
@@ -34,86 +36,167 @@ const Testimonial = () => {
             and emotionally.
           </p>
         </div>
-
-        <Slider {...settings}>
-          <div className=" bg-BgColorwhite rounded-[12px] shadow-[10px_8px_0px_0px_#1A1A1A] shadow-SecondaryColor mb-5  ">
-            <div className="flex flex-col items-center justify-center">
-              <div>
-                <div className="w-[80px] h-[80px] rounded-full bg-[#FFF5F0] flex justify-center items-center mx-auto mt-[50px]">
-                  <img
-                    className="   with-[56px] h-[56px]"
-                    src={Iconone}
-                    alt="Iconone"
-                  />
+        <div className=" mt-[100px] px-8 ">
+          <Slider {...settings}>
+            <div className=" w-[300px] h-[362px] bg-BgColorwhite rounded-[12px] shadow-[10px_8px_0px_0px_#1A1A1A] shadow-SecondaryColor 
+             px-5  ">
+              <div className="flex flex-col items-center justify-center">
+                <div>
+                  <div className="w-[80px] h-[80px] rounded-full bg-[#FFF5F0] flex justify-center items-center mx-auto mt-[50px]">
+                    <img
+                      className="   with-[56px] h-[56px]"
+                      src={Iconone}
+                      alt="Iconone"
+                    />
+                  </div>
+                  <h3 className="text-[24px] font-semibold font-Outfit text-[#333333] mt-3 text-center">
+                    Jennifer B
+                  </h3>
+                  <ul className="flex gap-[5px] mt-[30px]">
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                  </ul>
                 </div>
-                <h3 className="text-[24px] font-semibold font-Outfit text-[#333333] mt-3 text-center">
-                  Jennifer B
-                </h3>
-                <ul className="flex gap-[5px] mt-[30px]">
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                </ul>
+                <p className="text-[20px] font-medium font-Outfit text-[#333333]  text-center mt-[30px] ">
+                  Little Learners Academy has been a second home for my child.
+                  The caring staff and engaging programs have made her excited
+                  to go to school every day!
+                </p>
               </div>
-              <p className="text-[20px] font-medium font-Outfit text-[#333333]  text-center mt-[30px] ">
-                Little Learners Academy has been a second home for my child. The
-                caring staff and engaging programs have made her excited to go
-                to school every day!
-              </p>
             </div>
-          </div>
-          <div className=" bg-BgColorwhite rounded-[12px] shadow-[10px_8px_0px_0px_#1A1A1A] shadow-SecondaryColor mb-5   ">
-            <div className="flex flex-col items-center justify-center">
-              <div>
-                <div className="w-[80px] h-[80px] rounded-full bg-[#FFF5F0] flex justify-center items-center mx-auto mt-[50px]">
-                  <img
-                    className="   with-[56px] h-[56px]"
-                    src={Iconone}
-                    alt="Iconone"
-                  />
+            <div className=" w-[300px] h-[362px] bg-BgColorwhite rounded-[12px] shadow-[10px_8px_0px_0px_#1A1A1A] shadow-SecondaryColor 
+             px-5  ">
+              <div className="flex flex-col items-center justify-center">
+                <div>
+                  <div className="w-[80px] h-[80px] rounded-full bg-[#FFF5F0] flex justify-center items-center mx-auto mt-[50px]">
+                    <img
+                      className="   with-[56px] h-[56px]"
+                      src={icontwo}
+                      alt="Icontwo"
+                    />
+                  </div>
+                  <h3 className="text-[24px] font-semibold font-Outfit text-[#333333] mt-3 text-center">
+                    David K
+                  </h3>
+                  <ul className="flex gap-[5px] mt-[30px]">
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                  </ul>
                 </div>
-                <h3 className="text-[24px] font-semibold font-Outfit text-[#333333] mt-3 text-center">
-                  Jennifer B
-                </h3>
-                <ul className="flex gap-[5px] mt-[30px]">
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                  <li className="text-[24px] text-[#FF8D4D]">
-                    <FaStar />
-                  </li>
-                </ul>
+                <p className="text-[20px] font-medium font-Outfit text-[#333333]  text-center mt-[30px] ">
+                  Choosing Little Learners Academy for my daughter was the best
+                  decision. She has thrived in their nurturing and stimulating
+                  environment.
+                </p>
               </div>
-              <p className="text-[20px] font-medium font-Outfit text-[#333333]  text-center mt-[30px]">
-                Little Learners Academy has been a second home for my child. The
-                caring staff and engaging programs have made her excited to go
-                to school every day!
-              </p>
             </div>
-          </div>
-        </Slider>
+            <div className=" w-[300px] h-[362px] bg-BgColorwhite rounded-[12px] shadow-[10px_8px_0px_0px_#1A1A1A] shadow-SecondaryColor 
+             px-5  ">
+              <div className="flex flex-col items-center justify-center">
+                <div>
+                  <div className="w-[80px] h-[80px] rounded-full bg-[#FFF5F0] flex justify-center items-center mx-auto mt-[50px]">
+                    <img
+                      className="   with-[56px] h-[56px]"
+                      src={iconthree}
+                      alt="Iconthree"
+                    />
+                  </div>
+                  <h3 className="text-[24px] font-semibold font-Outfit text-[#333333] mt-3 text-center">
+                  Emily L
+                  </h3>
+                  <ul className="flex gap-[5px] mt-[30px]">
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-[20px] font-medium font-Outfit text-[#333333]  text-center mt-[30px] ">
+                My son's social and academic growth has been remarkable since joining Little Learners Academy. I am grateful for the supportive and dedicated teachers.
+                </p>
+              </div>
+            </div>
+            <div className=" w-[300px] h-[362px] bg-BgColorwhite rounded-[12px] shadow-[10px_8px_0px_0px_#1A1A1A] shadow-SecondaryColor 
+             px-5 ">
+              <div className="flex flex-col items-center justify-center">
+                <div>
+                  <div className="w-[80px] h-[80px] rounded-full bg-[#FFF5F0] flex justify-center items-center mx-auto mt-[50px]">
+                    <img
+                      className="   with-[56px] h-[56px]"
+                      src={Iconone}
+                      alt="Iconone"
+                    />
+                  </div>
+                  <h3 className="text-[24px] font-semibold font-Outfit text-[#333333] mt-3 text-center">
+                    Jennifer B
+                  </h3>
+                  <ul className="flex gap-[5px] mt-[30px]">
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                    <li className="text-[24px] text-[#FF8D4D]">
+                      <FaStar />
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-[20px] font-medium font-Outfit text-[#333333]  text-center mt-[30px] ">
+                  Little Learners Academy has been a second home for my child.
+                  The caring staff and engaging programs have made her excited
+                  to go to school every day!
+                </p>
+              </div>
+            </div>
+          </Slider>
+        </div>
       </div>
+
+      
     </div>
   );
 };
